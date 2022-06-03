@@ -108,13 +108,12 @@ section img#triangle {
 
 .loading {
   display: flex;
-  top: 0;
-  left: 0;
-  transform: translate(-1vw, 35vh);
   justify-content: center;
+  align-self: center;
   background-color: #fff;
 }
 .carga {
+  margin-top: 40vh;
   width: 70px;
   height: 70px;
 }
