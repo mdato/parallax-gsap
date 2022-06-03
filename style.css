@@ -1,0 +1,141 @@
+@import url(http://fonts.googleapis.com/css?family=Poppins:400,300,600,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to top, #fff, transparent);
+  z-index: 10;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#nube1 {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+#nube2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#left::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to right, rgb(9, 53, 22), transparent);
+  z-index: 10;
+}
+
+#right::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to right, rgb(9, 53, 22), transparent);
+  z-index: 10;
+}
+
+section img#triangle {
+  top: -1px;
+  transform-origin: bottom;
+}
+
+#text {
+  position: relative;
+  color: #fff;
+  font-size: 10vw;
+}
+
+.sec {
+  position: relative;
+  padding: 100px;
+}
+
+.sec h2 {
+  font-size: 3em;
+  color: #20496a;
+  margin-bottom: 10px;
+}
+
+.sec p {
+  font-size: 1.2em;
+  color: #20496a;
+}
+
+@media only screen and (max-width: 576px) {
+  .sec {
+    position: relative;
+    padding: 1px;
+  }
+
+  #triangle {
+    margin-top: 100px;
+  }
+
+  #nube2 {
+    left: 0px;
+    z-index: 100;
+  }
+  #nube1 {
+    left: 0px;
+    z-index: 100;
+  }
+
+  .sec h2 {
+    padding: 20px;
+    font-size: 1.5em;
+  }
+
+  .sec p {
+    padding: 0 20px 20px;
+    font-size: 1.2em;
+  }
+
+  #text {
+    font-size: 18vw;
+  }
+}
