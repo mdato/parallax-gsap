@@ -14,7 +14,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #212121;
+  background-color: #fff;
 }
 
 section::before {
@@ -104,6 +104,19 @@ section img#triangle {
 .sec p {
   font-size: 1.2em;
   color: #20496a;
+}
+
+.loading {
+  display: flex;
+  top: 0;
+  left: 0;
+  transform: translate(-1vw, 35vh);
+  justify-content: center;
+  background-color: #fff;
+}
+.carga {
+  width: 70px;
+  height: 70px;
 }
 
 @media only screen and (max-width: 576px) {
